@@ -1,0 +1,120 @@
+body {
+    max-width: 50%;
+    background-color: white;
+    color: blue;
+    font-family: Monaco;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.my_table {
+    font-size: 150%;
+    background-color: bisque;
+}
+.big_results {
+    font-size: 120%;
+}
+.my_title {
+    font-family: Arial;
+    color: rgb(130, 47, 255);
+    font-size: 150%;
+    text-align: center;
+    margin-left: 20%;
+}
+
+select{
+    font-family: Monaco;
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+    font-size: 110%;
+}
+
+select:hover{
+    color: red;
+    font-size: 150%;
+    background-color: yellowgreen;
+}
+
+input{
+    font-family: Monaco;
+    font-size: 120%;
+    background-color: white;
+}
+
+input:hover{
+    color: magenta;
+}
+
+button{
+    color: white;
+    background-color: green;
+    font-family: Monaco;
+    font-weight: bolder;
+    font-size: 100%;
+}
+
+a {
+    color: blue;
+    font-family: Monaco;
+    font-size:120%
+}
+
+a:hover{
+    font-size: 150;
+    color:black
+}
+
+button:hover{
+    transform: scale(1.5) rotate(-0.5deg);
+}
+
+img:hover{
+    transform: scale(1.1) rotate(2.5deg);
+    filter: brightness(350%);
+}
+
+ol {
+    font-weight: bolder;
+    font-size: 120%;
+}
+
+img {
+    width: 600px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+.footer p {
+    margin: 5px 0;
+}
+
+p {
+    color: green;
+    max-width: 50%;
+    /* text-align: center; */
+}
+
+input::placeholder {
+    font-size: 80%;
+}
+
+.my_form {
+    color: green;
+}
+
+table {
+    width: 200%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
+}

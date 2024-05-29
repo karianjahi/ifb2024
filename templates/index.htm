@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> infrastructure bond </title>
+    <link rel="stylesheet" href="/static/web_styles.css">    
+</head>
+<body>
+    <h1>IFB/2024/8.5</h1>
+    <p>
+        Welcome to this page. You are ready to find out your interest payments for the Feb 2024 infrastructure bond.
+        <br><br>
+        The minimum amount to invest is 50k and top-ups of a similar amount
+        <br><br>
+        Any amount you put will be reduced to the lowest 50k during calculations!
+        <br><br>
+
+        
+    </p>
+    <form action="/payout">
+        <div class="my_form">
+            <p> Enter your investment amount in the box below</p>
+            <input type="text" id="money" name="face_value" placeholder="Kes 50,000">
+            <br><br>
+            <button type=""submit>submit</button>
+        </div>
+    </form>
+    <script>
+        // Function to format input value with commas
+        function formatMoneyInput(input) {
+            // Remove existing commas and non-numeric characters
+            let value = input.value.replace(/[^\d]/g, '');
+            // Add commas every three digits from the right
+            value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            // Update input value
+            input.value = value;
+        }
+
+        // Get input element
+        const moneyInput = document.getElementById('money');
+
+        // Add event listener for input event
+        moneyInput.addEventListener('input', function() {
+            formatMoneyInput(this);
+        });
+    </script>
+    <br><br><br><br>
+    <footer>
+        <a href="https://www.centralbank.go.ke/uploads/treasury_bonds_prospectuses/2087959385_February%202024%20IFB1-2024-8.5%20%20DATED%2019-02-2024.pdf">see more details about IFB/2024/8.5</a>
+    </footer>
+    <br><br><br>
+</body>
+
+<div class="footer">
+    <p>Best regards,</p>
+    <p>Joseph karianjahi</p>
+    <p>Email: <a href="mailto:nkarianjahi@gmail.com">nkarianjahi@gmail.com</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/josephkarianjahinjeri" target="_blank">www.linkedin.com/in/josephkarianjahinjeri</a></p>
+</div>
+</html>

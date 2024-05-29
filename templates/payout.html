@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> infrastructure bond </title>
+    <link rel="stylesheet" href="/static/web_styles.css">    
+</head>
+
+<body>
+    <p>
+        <h1>
+            Welcome to the IFB/2024/8.5 results page! <br><br>
+            Your invested value is {{ "Kes {:,.2f}".format(face_value) }} <br><br>
+        </h1>
+        <h2>
+            Your bond runs for {{ years_of_investment}} years!
+        </h2>
+        <div class="my_title">
+            <h1> These are your payouts </h1>
+        </div>
+        <table>
+            <thead>
+                <tr class="my_table">
+                    <th>Payment date</th>
+                    <th>Interest</th>
+                    <th>Outstanding principal</th>
+                    
+                    <!-- <th>Amortization</th>
+                    <th>Total</th>
+                    <th>Total interest</th>
+                    <th>Final redemption</th>
+                    <th>Total amortization</th>
+                    <th>Total paid</th> -->
+                </tr>
+            </thead>
+        <tbody>
+            {% for interest in interests %}
+            <tr class="my_table">
+                <td>{{interest["date"]}}</td>
+                <td>{{ "Kes {:,.2f}".format(interest["interest"])   }}</td>
+                <td>{{  "Kes {:,.2f}".format(interest["outstanding principal"]) }}</td>
+                
+
+                
+                <td></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+    </p>
+    <div class="big_results">
+        <h3>
+            {% if first_amo != 0 %}
+            First amortization on {{first_date_amo}}. You receive {{"Kes {:,.2f}".format(first_amo)}}<br><br>
+            Second and final amortization on {{last_date_amo}}. You receive {{"Kes {:,.2f}".format(last_amo)}}<br><br>
+            {% endif %}
+            Total Interest earned throughout the life of the bond = {{"Kes {:,.2f}".format(earnings["total earnings"])}}
+            <br><br>
+            Total amount paid back to the you (the lender) until maturity = {{"Kes {:,.2f}".format(earnings["total gross payback"])}}
+            <br><br>
+        </h3>
+    </div>
+
+    <br><br>
+</body>
+
+<div class="footer">
+    <p>Best regards,</p>
+    <p>Joseph karianjahi</p>
+    <p>Email: <a href="mailto:nkarianjahi@gmail.com">nkarianjahi@gmail.com</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/josephkarianjahinjeri" target="_blank">www.linkedin.com/in/josephkarianjahinjeri</a></p>
+</div>
