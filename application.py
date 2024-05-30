@@ -41,4 +41,4 @@ def payout():
                            years_of_investment=int(len(interests)/2))
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=False, port=5000)
