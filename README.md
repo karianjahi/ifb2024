@@ -58,7 +58,7 @@ Read the full prospectus [here](https://www.centralbank.go.ke/uploads/treasury_b
 1. Clone the Repo
 ```
 git clone https://github.com/karianjahi/ifb-2024.git
-cd ifb-earnings-calculator
+cd ifb2024
 ```
 
 2. Create a Virtual Environment
