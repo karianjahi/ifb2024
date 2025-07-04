@@ -57,7 +57,7 @@ Read the full prospectus [here](https://www.centralbank.go.ke/uploads/treasury_b
 
 1. Clone the Repo
 ```
-git clone https://github.com/karianjahi/ifb-2024.git
+git clone https://github.com/karianjahi/ifb2024.git
 cd ifb2024
 ```
 
