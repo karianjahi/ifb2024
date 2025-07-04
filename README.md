@@ -108,7 +108,7 @@ Only amounts in KES 50,000 chunks are valid. Inputs like 75,000 or 98,000 will b
 This project is licensed under the MIT License.
 
 ## 👤 Author
-Joseph Karianjahi
+Joseph Karianjahi Njeri
 📧 nkarianjahi@gmail.com
 🔗 [LinkedIn](https://www.linkedin.com/in/josephkarianjahinjeri)
 🔗 [GitHub](https://github.com/karianjahi)
